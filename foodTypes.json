@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Fried rice",
+    "num": 2,
+    "avgCal": 350,
+    "imagePath": "/uploads/1732460105109-40858794.jpeg"
+  },
+  {
+    "name": "Salad",
+    "num": 2,
+    "avgCal": 200,
+    "imagePath": "/uploads/1732460673426-564018698.jpeg"
+  },
+  {
+    "name": "Boiled egg",
+    "num": 0,
+    "avgCal": 0,
+    "imagePath": ""
+  },
+  {
+    "name": "Pudding",
+    "num": 1,
+    "avgCal": 600,
+    "imagePath": "/uploads/1732460351304-5071562.jpeg"
+  },
+  {
+    "name": "ข้าวมันไก่",
+    "num": 1,
+    "avgCal": 9999,
+    "imagePath": "/uploads/1732460977056-788696757.jpeg"
+  }
+]

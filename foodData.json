@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Egg Fried rice",
+    "cal": "200",
+    "loc": "Nattee food",
+    "tag": "Fried rice",
+    "imagePath": "/uploads/1732460105109-40858794.jpeg"
+  },
+  {
+    "name": "ข้าวผัดปู",
+    "cal": "500",
+    "loc": "ลุงสมชาย",
+    "tag": "Fried rice",
+    "imagePath": "/uploads/1732460200359-328104264.jpeg"
+  },
+  {
+    "name": "Sweet pudding",
+    "cal": "600",
+    "loc": "7 eleven",
+    "tag": "Pudding",
+    "imagePath": "/uploads/1732460351304-5071562.jpeg"
+  },
+  {
+    "name": "Avocado salad",
+    "cal": "100",
+    "loc": "Home",
+    "tag": "Salad",
+    "imagePath": "/uploads/1732460673426-564018698.jpeg"
+  },
+  {
+    "name": "Home salad",
+    "cal": "300",
+    "loc": "Home",
+    "tag": "Salad",
+    "imagePath": "/uploads/1732460836583-706573146.jpeg"
+  },
+  {
+    "name": "Test",
+    "cal": "9999",
+    "loc": ">~<",
+    "tag": "ข้าวมันไก่",
+    "imagePath": "/uploads/1732460977056-788696757.jpeg"
+  }
+]

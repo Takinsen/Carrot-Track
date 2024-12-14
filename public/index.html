@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Display</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+<body class="noscrollbar">
+    <div id="foodDataContainer"></div>
+
+    <form id="foodDataForm">
+      <div id="FoodPreview" class="foods" style="position: absolute; scale: 0.9; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.161); top: 10px; left: 50%; margin-left: -95px;">
+        <div id="imagePreviewFoodpreview">
+        </div>
+        <div class="foodnameLable" id="foodNamePreview">Name</div>  
+        <img class="foodTypeCalImage" src="ui-image/carrot@5x.png">
+        <div class="foodcalLable" id="FoodCalPreview">000</div>
+        <img class="foodTypeLocImage" src="ui-image/location.app@5x.png">
+        <div class="foodLocLable" id="FoodLocPreview">Location</div>
+        <div class="foodTagLable" id="foodTagPreview"># Tag</div>
+      </div>
+      <div id="foodDataTextContainer">
+          <input type="text" class="foodDataInput" id="foodDataName" placeholder="Food name" oninput="summitableCheck(event)" required>
+          <input type="number" class="foodDataInput" id="foodDataCal" placeholder="calories" oninput="summitableCheck(event)" required>
+          <input type="text" class="foodDataInput" id="foodDataLoc" placeholder="Location" oninput="summitableCheck(event)" required>
+      </div>
+      <div id="foodDataTextContainer">
+        <input type="text" class="foodDataInput" id="TagSearch" placeholder="Search tag" required>
+        <div id="tagContainer" class="noscrollbar"></div>
+        <div id="tagContainerBorder"></div>
+      </div>
+      <div class="custom-file-input">
+        <img class="icon1" src="ui-image/fork.knife@5x.png">
+        <div id="image-preview">
+        </div>
+        <input type="file" id="image-input" accept="image/*" onchange="saveAndPerviewImage(event), summitableCheck(event)" onblur="summitableCheck(event)">
+      </div>
+      <div id="postButton" onclick="post(event)">
+        <img id="posticon" src="ui-image/arrow.up@5x.png">
+      </div>
+      <div id="moreBoard" class="noscrollbar"></div>
+    </form>
+    <div id="selectedInfoBox">
+      <img id="selectedBoxCarrotIcon" src="ui-image/FatCarrot black icon.png">
+      <div id="selectedBoxMessage">Wow, aiming for the world record, are we?  
+        Maybe pace yourself, champ.</div>
+
+      <div class="selectedBoxNumLable" style="left: 20px; bottom: 65px;">Items</div>
+      <div class="selectedBoxNum" id="selectedBoxNumItem" style="left:85px; bottom: 65px;">20</div>
+      <div class="selectedBoxNumLable" style="left: 160px; bottom: 65px;">Types</div>
+      <div class="selectedBoxNum" id="selectedBoxNumType" style="left:230px; bottom: 65px;">20</div>
+      <div id="calBar">
+        <div id="calBarValue"></div>
+      </div>
+      <div id="calRangeBar">
+        <div class="idealBars" id="idb1" style="width: 34%; left: 0;"></div>
+        <div class="idealBars" id="idb2" style="width: 30%; left: 35%;"></div>
+        <div class="idealBars" id="idb3" style="width: 34%; right: 0;"></div>
+      </div>
+    </div>
+    <form id="searchBar">
+      <div id="SearchContainer" style="left: 5px; right: 95px;">
+        <input type="text" id="searchField" placeholder="Search..." required>
+      </div>
+      <div id="addButton" onclick="addMode(), fetchFoodTag()">
+        <img class="icon4"  style="margin-left: 8.5px; margin-top:8.5px;
+         transition: all 0.8s cubic-bezier(.65,-0.28,.34,1.19);
+        " src="ui-image/widget.small.badge.plus@5x.png">
+      </div>
+      <div id="filterSelectButton" onclick="selectBoxMode()">
+        <img class="icon6"  style="margin-left: 8.5px; margin-top:8.5px;
+         transition: all 0.8s cubic-bezier(.65,-0.28,.34,1.19);
+        " src="ui-image/archivebox@5x.png">
+      </div>
+    </form>
+    <div id="topFader"></div>
+    <div id="topActionBar">
+      <div id="CatagoryDisplay">All</div>
+      <div id="backButton" onclick="backToAll()">
+        <img src="ui-image/chevron.left@5x.png" class="icon5">
+      </div>
+    </div>
+    <div id="selectedNumContainer">0</div>
+    <div id="selectedCalContainer">0</div>
+    <div class="topBarLable" style="top: 15px; left: 205px;">Items</div>
+    <div class="topBarLable" style="top: 39px; left: 205px;">Cal</div>
+    <div id="logoContainer">
+      <img src="ui-image/CalTrack logo.png" id="mainLogo">
+      <img src="ui-image/Carrot Track text.png" id="logoText">
+    </div>
+    <script src="script.js"></script>
+    <script src="PostForm.js"></script>
+    <script src="topBar.js"></script>
+    <script src="selectedBox.js"></script>
+</body>
+</html>

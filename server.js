@@ -6,12 +6,15 @@ const path = require('path');
 const fs = require('fs');
 const multer = require('multer');
 const app = express();
-const port = process.env.PORT || 80;
+
+const port = 80;
 
 // MongoDB connection
-const MONGO_URI = process.env.MONGO_URI; // Replace with your MongoDB URI
+const MONGO_URI = `mongodb+srv://takinsen:devill990@mycluster.iqulr.mongodb.net/`;
 const DATABASE_NAME = 'foodApp';
 let db;
+
+console.log('MongoDB URI:', process.env.MONGODB_URI);
 
 // Connect to MongoDB
 MongoClient.connect(MONGO_URI)

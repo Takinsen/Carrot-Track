@@ -1,5 +1,5 @@
-const apiUrl = 'http://localhost:80/api';
-const Url = 'http://localhost:80';
+const apiUrl = 'https://fat-carrot.vercel.app/api';
+const Url = 'https://fat-carrot.vercel.app/';
 // production url pieboard.thddns.net:6990
 // Fetch and display all messages when the page loads
 let selectedgroup = "default";

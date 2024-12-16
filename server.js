@@ -10,11 +10,9 @@ const app = express();
 const port = 80;
 
 // MongoDB connection
-const MONGO_URI = `mongodb+srv://takinsen:devill990@mycluster.iqulr.mongodb.net/`;
+const MONGO_URI = 'mongodb+srv://CLOUD:NIEr85BA0yMlAVXR@mycluster.iqulr.mongodb.net/';
 const DATABASE_NAME = 'foodApp';
 let db;
-
-console.log('MongoDB URI:', process.env.MONGODB_URI);
 
 // Connect to MongoDB
 MongoClient.connect(MONGO_URI)

@@ -5,8 +5,8 @@ const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
 const multer = require('multer');
-const app = express();
 
+const app = express();
 const port = 80;
 
 // MongoDB connection

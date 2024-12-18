@@ -1,5 +1,5 @@
-const apiUrl = 'https://fat-carrot.vercel.app/api';
-const Url = 'https://fat-carrot.vercel.app/';
+const apiUrl = 'https://fat-carrot.onrender.com/api';
+const Url = 'https://fat-carrot.onrender.com/';
 // production url pieboard.thddns.net:6990
 // Fetch and display all messages when the page loads
 let selectedgroup = "default";

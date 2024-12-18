@@ -9,7 +9,7 @@ const app = express();
 const port = 80;
 
 // MongoDB connection
-const MONGO_URI = process.env.MONGO_URI; // Replace with your MongoDB URI
+const MONGO_URI = process.env.MONGODB_URI; // Replace with your MongoDB URI
 const DATABASE_NAME = 'foodApp';
 let db;
 
